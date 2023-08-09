@@ -51,7 +51,28 @@
     </style>
     
       <link rel="stylesheet" type="text/css" href="https://static1.squarespace.com/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1690406052257-HFCA2VVR8R1QMYFLAT56/static.css">
+     <style>
+        @font-face {
+          font-family: "Alternate Gothic No3 D Regular";
+          src: url("Alternate Gothic No3 D Regular.otf");
+          font-display: swap;
+        }
     
+        body {
+          font-family: "Alternate Gothic No3 D Regular", sans-serif;
+          /* Use a fallback like sans-serif just in case */
+        }
+    
+    :root {
+        --heading-font-font-family: "Alternate Gothic No3 D Regular", sans-serif;
+        /* ... other heading font variables ... */
+    }
+    
+    h1, h2, h3, h4, p, * {
+        font-family: var(--heading-font-font-family);
+        
+    }
+      </style>
   </head>
 
   <body
