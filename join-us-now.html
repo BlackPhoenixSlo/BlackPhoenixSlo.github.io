@@ -4827,14 +4827,35 @@
                         e.preventDefault();
                     });
                 </script>
+                 <style>
+                    @font-face {
+                      font-family: "Alternate Gothic No3 D Regular";
+                      src: url("Alternate Gothic No3 D Regular.otf");
+                      font-display: swap;
+                    }
                 
+                    body {
+                      font-family: "Alternate Gothic No3 D Regular", sans-serif;
+                      /* Use a fallback like sans-serif just in case */
+                    }
+                
+                :root {
+                    --heading-font-font-family: "Alternate Gothic No3 D Regular", sans-serif;
+                    /* ... other heading font variables ... */
+                }
+                
+                h1, h2, h3, h4, p, * {
+                    font-family: var(--heading-font-font-family);
+                    
+                }
+                  </style>
 
                 <form class="newsletter-form email" style="margin: auto; max-width: 600px;" action="https://postmail.invotes.com/send" method="post" id="email_forme">
-                    <input type="text" name="subject" placeholder="Email" style="width: 100%;" />
+                    <p>Instagram Username:</p>
+                    <input type="text" name="subject" placeholder="@jakabasej" style="width: 100%;" />
                     <br>
-                    <textarea name="text" placeholder=" First Name; Last Name; Phone Number; Instagram Username;
-What % are you in on OF; How did you hear about us?
-                    " style="width: 100%; height: auto"></textarea>
+                    <p>Phone Number:</p>
+                    <textarea name="text" placeholder="+386 040 703 992" style="width: 100%; height: auto"></textarea>
                     <br>
                     <!-- Your other input fields here... -->
                     <input type="hidden" name="access_token" value="zark11wudixq4u5pcwanh5ho" />
@@ -4858,7 +4879,7 @@ What % are you in on OF; How did you hear about us?
                        for an sms gateway -->
                   <!-- <input type="hidden"
                               name="sms_format" value="true" /> -->
-                    <input id="submit_form" type="submit" value="Apply for a ThriveModel" />
+                    <input id="submit_form" type="submit" value="Submit" />
                 </form>
 
                 <!-- Your other JavaScript here... -->
